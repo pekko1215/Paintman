@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Paintman",
+    "version": "1.0",
+    "background":{
+		"scripts":["background.js","jquery-3.3.1.min.js","setting.js"]
+	},
+    "permissions": [
+        "storage",
+        "contextMenus",
+        "http://*/*",
+        "https://*/*"
+    ],
+    "content_scripts":[{
+		"matches":["http://*/*","https://*/*"],
+		"js":["jquery-3.3.1.min.js","content.js"]
+    }]
+}

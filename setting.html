@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>PaintMan 編集ページ</title>
+    <style type="text/css">
+    table {
+        width: 100%;
+    }
+
+    table,
+    td,
+    th {
+        border: 2px black solid;
+    }
+    input[type="text"]{
+		width:520px;
+    }
+    textarea{
+		width:520px;
+		height:300px;
+    }
+    </style>
+</head>
+
+<body>
+    <h2>ルール一覧</h2>
+    <table>
+        <tr>
+            <th>URL</th>
+            <th>セレクタ</th>
+            <th>CSS</th>
+            <th></th>
+        </tr>
+    </table>
+    <br>
+    <h2><a href="#">ルールの追加</a></h2>
+		URL : <input type="text" id="URL"><br>
+		<input type="radio" id="absolute" name="ruletype" checked>絶対座標で指定する<br>
+		<input type="radio" id="attributes" name="ruletype">属性で選択する<br>
+		セレクタ : <input type="text" id="selector"><br>
+		CSS : <br>
+		<textarea id="CSS"></textarea><br>
+		<button id="add">追加</button>
+    <br>
+    <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="setting.js"></script>
+</body>
+
+</html>
